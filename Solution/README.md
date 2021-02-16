@@ -35,9 +35,9 @@ public class Solution {
                 firstArrayIndex = firstArrayIndex + 1;
             }
         }
-        nums1 = null;
-        nums2 = null;
-        GC.Collect();
+        nums1 = null;  // Delete this to optimize speed
+        nums2 = null;  // Delete this to optimize speed
+        GC.Collect();  // Delete this to optimize speed
         return sumLenght % 2 == 0 ? (result + prev) / 2.0 : result;
     }
 }
